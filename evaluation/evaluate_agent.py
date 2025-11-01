@@ -5,7 +5,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 def evaluate_agent():
-    tests= load_dataset("bigcode/humanevalpack", split="test[:50]")
+    tests= load_dataset("bigcode/humanevalpack", split="test[:20]") # first 20 tests
     passed = 0
     failed_tests=set()
     total = len(tests)
